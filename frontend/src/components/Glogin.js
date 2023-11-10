@@ -11,7 +11,7 @@ function Glogin() {
     localStorage.setItem('OAuth token',idToken);
 
     try {
-      const response = await fetch('http://localhost:5000/google-login', {
+      const response = await fetch('/google-login', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

@@ -71,7 +71,7 @@ router.post('/api/save-to-drive/:photoId', async (req, res) => {
   }
 
   
-  const imageUrl = `http://localhost:5000/uploads/${selectedPhoto.photo}`; // URL to the image
+  const imageUrl = `/uploads/${selectedPhoto.photo}`; // URL to the image
 
   try {
     const imageResponse = await fetch(imageUrl);

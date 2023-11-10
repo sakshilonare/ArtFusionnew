@@ -32,7 +32,7 @@ const TopNavBar = () => {
         const uId = decoded.id;
         localStorage.setItem('decodedId',uId);
         console.log("uId", uId);
-        fetch(`http://localhost:5000/userdetails/${uId}`, {
+        fetch(`/userdetails/${uId}`, {
           method: 'GET',
         })
           .then(res => {

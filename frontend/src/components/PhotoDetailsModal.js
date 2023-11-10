@@ -11,7 +11,7 @@ const PhotoDetailsModal = ({ photo, onClose }) => {
         <h2>Photo Details</h2>
         <div>
           <img
-            src={`http://localhost:5000/uploads/${photo.photo}`}
+            src={`/uploads/${photo.photo}`}
             alt="grid_image"
           />
         </div>

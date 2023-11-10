@@ -23,7 +23,7 @@ function App() {
   useEffect(() => {
     // Fetch photos data when the component mounts or when updateUI changes
     axios
-      .get("http://localhost:5000/api/get")
+      .get("/api/get")
       .then((res) => {
         console.log(res.data);
         setPhotos(res.data);

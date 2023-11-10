@@ -5,7 +5,7 @@ const ServerTutorials = () => {
     const [videos, setVideos] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:5000/api/getArtTutorials', {
+        fetch('/api/getArtTutorials', {
             method: 'GET', 
         })
             .then(res => {
