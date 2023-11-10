@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Geologica:wght@500&family=Lemonada:wght@700&display=swap');
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
+  gap: 1rem;
+  padding: 5rem;
+  padding-top: 12px;
+  background-color: #D2C7B9;
+}
+
+.grid__item {
+  /* height: 20rem; */
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 0px 10px rgba(0, 0, 0, 0.25);
+  border-color: #5A0606;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.grid__item img{
+  width: 100%;
+  height: 100%;
+  /* background-size: cover; */
+}
+
+h1 {
+  font-family: 'Black Han Sans', sans-serif;
+  font-family: 'Lemonada', cursive;
+  font-size: 2.4rem;
+  font-weight: 600;
+  margin: 2rem 5rem;
+}
+.heading{
+  color: #9F0505;
+  text-align: center;
+  margin-top: 5rem;
+}
+
+.custom-button {
+  background-color: transparent;
+  color: rgb(122, 8, 8); /* Text color */
+  border: none;
+  font-family: 'Black Han Sans', sans-serif;
+ 
+}
+
+#pictitle1{
+  font-family: 'Geologica', sans-serif;
+}
+
+#pictitle1 p{
+  background-color: #9F0505;
+  color: aliceblue;
+}
+
+#headingtext{
+  margin-top:-15px;
+  margin-left:7rem;
+  margin-right:5rem;
+}
+
+.custom-button:hover {
+  background-color: rgb(99, 5, 5);
+  color: rgb(229, 228, 228);
+}
+
+.ModalBody{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.Modalinfo{
+  background-color:rgb(243, 171, 71);
+  border-radius: 10px;
+  margin-left:10px;
+  min-height: 200px;
+  min-width: 200px;
+}
+
+.Modalimg{
+ border:solid;
+ border-color:rgb(110, 6, 6) ;
+ border-radius: 2px;
+ width: 80%;
+ height: 80%;
+}
+
+#creator,#ptitle,#desc{
+  margin-left:10px;
+  margin-right:10px;
+  background-color: aliceblue;
+  border-radius: 5px;
+}
+#ptitle{
+  margin-top:5px;
+  color:rgb(110, 6, 6) ;
+  font-weight: bolder;
+  
+
+}
+#creator{
+  margin-top:-12px;
+  text-align: right;
+  max-width: fit-content;
+}
+
+#price{
+  background-color: rgb(110, 6, 6);
+  border-radius: 5px;
+  margin-left:5px;
+  margin-right:5px;
+  color:aliceblue;
+}
+
+#backbtn{
+  color:aliceblue;
+  background-color:rgb(110, 6, 6) ;
+  overflow: hidden;
+}
+
+.Modalimg img{
+  object-fit: cover;
+}
+
+
+
+

@@ -1,0 +1,96 @@
+
+.tutcontainer {
+  margin: 10% auto; /* Center horizontally */
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 2rem;
+  padding-top: 0;
+  justify-content: center;
+  width: 86vw;
+}
+  
+  .tutitem {
+    padding: 2rem;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 0px 10px rgba(0, 0, 0, 0.25);
+    border: solid;
+    border-color: antiquewhite;
+    margin-bottom: 1rem;
+  }
+  .video-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: flex-start;
+  }
+  
+  .video-item {
+    /* flex: 0 1 calc(33.33% - 1rem); */
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 0px 10px rgba(0, 0, 0, 0.25);
+    border: solid;
+    border-color: antiquewhite;
+    margin-bottom: 1rem;
+  }
+
+  /* CSS for a simple loading spinner */
+  .fancy-spinner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 5rem;
+    height: 5rem;
+  }
+  
+  .fancy-spinner div {
+    position: absolute;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+  }
+  
+  .fancy-spinner div.ring {
+    border-width: 0.5rem;
+    border-style: solid;
+    border-color: transparent;
+    animation: 2s fancy infinite alternate;
+  }
+  
+  .fancy-spinner div.ring:nth-child(1) {
+    border-left-color: rgba(179, 126, 126, 0.9);
+    border-right-color: rgba(179, 126, 126, 0.9);
+  }
+  
+  .fancy-spinner div.ring:nth-child(2) {
+    border-top-color: rgba(179, 126, 126, 0.9);
+    border-bottom-color: rgba(179, 126, 126, 0.9);
+    animation-delay: 1s;
+  }
+  
+  .fancy-spinner div.dot {
+    width: 1rem;
+    height: 1rem;
+    background: rgba(179, 126, 126, 0.9);
+  }
+  
+  
+  @keyframes fancy {
+    to {
+      transform: rotate(360deg) scale(0.5);
+    }
+  }
+
+  /* .tutorial-navbar .navbar-light .navbar-nav .nav-link{
+    color: #643232;
+}
+
+.navbar-light .navbar-nav .nav-link.tutorial-link {
+  color: #00FF00; /* Change this to your desired color 
+} */
+
+  
+
+  
