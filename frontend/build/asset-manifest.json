@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/static/css/main.c5122e0f.css",
+    "main.js": "/static/js/main.73b9335e.js",
+    "static/js/787.cda612ba.chunk.js": "/static/js/787.cda612ba.chunk.js",
+    "static/media/gif": "/static/media/de31bd9dc59d7d9636057d3f883dc386.cab7ca82b3a43dc2792d.gif",
+    "static/media/fa-solid-900.ttf": "/static/media/fa-solid-900.d75e3fd1eb12e9bd6655.ttf",
+    "static/media/digital-art-painting-brown-rock-wallpaper.jpg": "/static/media/digital-art-painting-brown-rock-wallpaper.3a525aa465d2d965bde3.jpg",
+    "static/media/fa-brands-400.ttf": "/static/media/fa-brands-400.016b4a6cdced82ab3aa1.ttf",
+    "static/media/fa-solid-900.woff2": "/static/media/fa-solid-900.b6879d41b0852f01ed5b.woff2",
+    "static/media/fa-brands-400.woff2": "/static/media/fa-brands-400.878f31251d960bd6266f.woff2",
+    "static/media/Desktop - 3.png": "/static/media/Desktop - 3.664cd19ce47f53449a0f.png",
+    "static/media/fa-regular-400.ttf": "/static/media/fa-regular-400.50701fbb8177c2dde530.ttf",
+    "static/media/fa-regular-400.woff2": "/static/media/fa-regular-400.b041b1fa4fe241b23445.woff2",
+    "static/media/fa-v4compatibility.ttf": "/static/media/fa-v4compatibility.c6a0c95b0a95c4553700.ttf",
+    "static/media/fa-v4compatibility.woff2": "/static/media/fa-v4compatibility.1bac2991f3dbfa237aec.woff2",
+    "index.html": "/index.html",
+    "main.c5122e0f.css.map": "/static/css/main.c5122e0f.css.map",
+    "main.73b9335e.js.map": "/static/js/main.73b9335e.js.map",
+    "787.cda612ba.chunk.js.map": "/static/js/787.cda612ba.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c5122e0f.css",
+    "static/js/main.73b9335e.js"
+  ]
+}
