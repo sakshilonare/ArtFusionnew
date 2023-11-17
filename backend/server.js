@@ -12,9 +12,7 @@ const PORT = process.env.PORT || 5000;
 app.get('/', (req, res) => {
   res.send("Hi");
 });
-app.use(cors({
-  origin: 'http://localhost:3000',
-}));
+app.use(cors());
 app.use(express.json());
 app.use(cookieParser());
 app.use(express.static("public"));
