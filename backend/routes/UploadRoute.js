@@ -22,12 +22,12 @@ const auth = new google.auth.GoogleAuth({
 
 const driveService = google.drive({version: 'v3', auth});
 
-router.get("/api/get", async (req, res) => {
+router.get("http://localhost:5000/api/get", async (req, res) => {
   const allPhotos = await UploadModel.find().sort({ createdAt: "descending" });
   res.send(allPhotos);
 });
 
-router.post("/api/save", uploadMiddleware.single("photo"), (req, res) => {
+router.post("http://localhost:5000/api/save", uploadMiddleware.single("photo"), (req, res) => {
   const { phototitle, photoDescription, user,forSale,price } = req.body; 
   const photo = req.file.filename; 
 
@@ -43,7 +43,7 @@ router.post("/api/save", uploadMiddleware.single("photo"), (req, res) => {
 });
 
 
-router.delete("/api/delete/:pid", async (req, res) => {
+router.delete("http://localhost:5000/api/delete/:pid", async (req, res) => {
   const photoId = req.params.pid;
 
   try {
@@ -60,7 +60,7 @@ router.delete("/api/delete/:pid", async (req, res) => {
 });
 
 // POST route to save the image to Google Drive
-router.post('/api/save-to-drive/:photoId', async (req, res) => {
+router.post('http://localhost:5000/api/save-to-drive/:photoId', async (req, res) => {
   const photoId = req.params.photoId;
 
   // Fetch the selected photo by photoId from your database
@@ -119,7 +119,7 @@ router.post('/api/save-to-drive/:photoId', async (req, res) => {
 });
 
 
-router.put('/api/update/:photoId', async (req, res) => {
+router.put('http://localhost:5000/api/update/:photoId', async (req, res) => {
   try {
     const { photoId } = req.params;
     const { phototitle, photoDescription, price } = req.body; // Fields to update

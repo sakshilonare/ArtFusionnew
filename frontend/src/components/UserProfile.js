@@ -43,7 +43,7 @@ const UserProfile = () => {
   useEffect(() => {
     // Fetch photos data when the component mounts or when updateUI changes
     axios
-      .get("/api/get")
+      .get("http://localhost:5000/api/get")
       .then((res) => {
         console.log(res.data);
         setPhotos(res.data);
@@ -63,7 +63,7 @@ const UserProfile = () => {
     }
   };
   const updateProfile = () => {
-    axios.put(`/api/updateUser/${userId}`, editedUser)
+    axios.put(`http://localhost:5000/api/updateUser/${userId}`, editedUser)
     .then((response) => {
       // Handle a successful response here
       console.log('User information updated:', response.data);
