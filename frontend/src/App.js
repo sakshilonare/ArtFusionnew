@@ -23,7 +23,7 @@ function App() {
   useEffect(() => {
     // Fetch photos data when the component mounts or when updateUI changes
     axios
-      .get("/api/get")
+      .get("https://artfusionback.onrender.com/api/get")
       .then((res) => {
         console.log(res.data);
         setPhotos(res.data);

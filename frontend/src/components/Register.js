@@ -20,7 +20,7 @@ const Register = () => {
         e.preventDefault();
 
         const {name,email,pass,cpass} =user
-        const res = await fetch("/register", {
+        const res = await fetch("https://artfusionback.onrender.com/register", {
             method:"POST",
             headers:{
                 "Content-Type":"application/json",

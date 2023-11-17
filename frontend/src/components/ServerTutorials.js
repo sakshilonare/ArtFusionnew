@@ -5,7 +5,7 @@ const ServerTutorials = () => {
     const [videos, setVideos] = useState([]);
 
     useEffect(() => {
-        fetch('/api/getArtTutorials', {
+        fetch('https://artfusionback.onrender.com/api/getArtTutorials', {
             method: 'GET', 
         })
             .then(res => {
