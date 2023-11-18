@@ -33,7 +33,7 @@ const Grid = ({ photos }) => {
   const saveChanges = async () => {
     try {
       // Send a PUT request to update the photo details
-      const response = await fetch(`https://artfusionback.onrender.com/api/update/${selectedPhoto._id}`, {
+      const response = await fetch(`/api/update/${selectedPhoto._id}`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',
@@ -63,7 +63,7 @@ const Grid = ({ photos }) => {
   // Function to fetch user details by userId
   const fetchUserDetails = async (userId) => {
     try {
-      const response = await fetch(`https://artfusionback.onrender.com/userdetails/${userId}`);
+      const response = await fetch(`/userdetails/${userId}`);
       if (!response.ok) {
         throw new Error('Network response was not ok');
       }
@@ -77,7 +77,7 @@ const Grid = ({ photos }) => {
 
   const deletePic = async (photoId) => {
     try {
-      const response = await fetch(`https://artfusionback.onrender.com/api/delete/${photoId}`, {
+      const response = await fetch(`/api/delete/${photoId}`, {
         method: 'DELETE',
       });
 
@@ -119,7 +119,7 @@ const Grid = ({ photos }) => {
 
     const saveImageToDrive = async (photoId) => {
       try {
-        const response = await fetch(`https://artfusionback.onrender.com/api/save-to-drive/${photoId}`, {
+        const response = await fetch(`/api/save-to-drive/${photoId}`, {
           method: 'POST',
         });
   
@@ -149,7 +149,7 @@ const Grid = ({ photos }) => {
         <Modal.Body className="ModalBody">
           <div className="Modalimg">
             <img
-              src={`https://artfusionback.onrender.com/uploads/${props.photo}`}
+              src={`/uploads/${props.photo}`}
               alt="grid_image"
               className="grid__image" 
             />
@@ -248,7 +248,7 @@ const Grid = ({ photos }) => {
               setModalShow(true);
             }}>
               <img
-                src={`https://artfusionback.onrender.com/uploads/${photo}`}
+                src={`/uploads/${photo}`}
                 alt="grid_image"
                 className="grid__image" 
               />

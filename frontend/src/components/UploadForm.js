@@ -41,7 +41,7 @@ const UploadForm = ({ setUpdateUI }) => {
     form.append("price", price);
   
     try {
-      const res = await axios.post("https://artfusionback.onrender.com/api/save", form, {
+      const res = await axios.post("/api/save", form, {
         headers: {
           "Content-Type": "multipart/form-data",
         },
