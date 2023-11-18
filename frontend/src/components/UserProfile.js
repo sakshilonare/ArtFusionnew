@@ -26,7 +26,7 @@ const UserProfile = () => {
 
   useEffect(() => {
     // Fetch user data using your API endpoint
-   fetch(`/userdetails/${userId}`, {
+   fetch(`https://artfusionbackend.onrender.com/userdetails/${userId}`, {
           method: 'GET',
         })
       .then((response) => response.json())
@@ -43,7 +43,7 @@ const UserProfile = () => {
   useEffect(() => {
     // Fetch photos data when the component mounts or when updateUI changes
     axios
-      .get("/api/get")
+      .get("https://artfusionbackend.onrender.com/api/get")
       .then((res) => {
         console.log(res.data);
         setPhotos(res.data);
@@ -63,7 +63,7 @@ const UserProfile = () => {
     }
   };
   const updateProfile = () => {
-    axios.put(`/api/updateUser/${userId}`, editedUser)
+    axios.put(`https://artfusionbackend.onrender.com/api/updateUser/${userId}`, editedUser)
     .then((response) => {
       // Handle a successful response here
       console.log('User information updated:', response.data);
@@ -199,7 +199,7 @@ const handleInputChange = (e) => {
           <div key={_id} className="grid__item1">
             
               <img
-                src={`/uploads/${photo}`}
+                src={`https://artfusionbackend.onrender.com/uploads/${photo}`}
                 alt="grid_image"
                 className="grid__image" 
               />

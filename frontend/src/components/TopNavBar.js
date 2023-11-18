@@ -32,7 +32,7 @@ const TopNavBar = () => {
         const uId = decoded.id;
         localStorage.setItem('decodedId',uId);
         console.log("uId", uId);
-        fetch(`/userdetails/${uId}`, {
+        fetch(`https://artfusionbackend.onrender.com/userdetails/${uId}`, {
           method: 'GET',
         })
           .then(res => {

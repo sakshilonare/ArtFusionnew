@@ -13,7 +13,7 @@ app.get('/', (req, res) => {
   res.send("Hi");
 });
 app.use(cors({
-  origin:"http://localhost:3000"
+  origin:"*"
 }));
 app.use(express.json());
 app.use(cookieParser());

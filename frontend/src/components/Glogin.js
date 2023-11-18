@@ -11,7 +11,7 @@ function Glogin() {
     localStorage.setItem('OAuth token',idToken);
 
     try {
-      const response = await fetch('/google-login', {
+      const response = await fetch('https://artfusionbackend.onrender.com/google-login', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

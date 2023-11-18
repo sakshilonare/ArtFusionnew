@@ -77,7 +77,7 @@ const Grid = ({ photos }) => {
 
   const deletePic = async (photoId) => {
     try {
-      const response = await fetch(`/api/delete/${photoId}`, {
+      const response = await fetch(`https://artfusionbackend.onrender.com/api/delete/${photoId}`, {
         method: 'DELETE',
       });
 
@@ -119,7 +119,7 @@ const Grid = ({ photos }) => {
 
     const saveImageToDrive = async (photoId) => {
       try {
-        const response = await fetch(`/api/save-to-drive/${photoId}`, {
+        const response = await fetch(`https://artfusionbackend.onrender.com/api/save-to-drive/${photoId}`, {
           method: 'POST',
         });
   
@@ -149,7 +149,7 @@ const Grid = ({ photos }) => {
         <Modal.Body className="ModalBody">
           <div className="Modalimg">
             <img
-              src={`/uploads/${props.photo}`}
+              src={`https://artfusionbackend.onrender.com/uploads/${props.photo}`}
               alt="grid_image"
               className="grid__image" 
             />
@@ -248,7 +248,7 @@ const Grid = ({ photos }) => {
               setModalShow(true);
             }}>
               <img
-                src={`/uploads/${photo}`}
+                src={`https://artfusionbackend.onrender.com/uploads/${photo}`}
                 alt="grid_image"
                 className="grid__image" 
               />
